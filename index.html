@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choosie — Официальные документы / Legal Documents</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    :root {
+      --bg: #f6faf6;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+      --text-muted: #718096;
+      --primary: #2e7d32;
+      --primary-light: #e8f5e9;
+      --danger: #d32f2f;
+      --danger-bg: #ffebee;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 16px;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header { text-align: center; padding: 30px 0 15px; }
+    .brand-logo { width: 90px; height: 90px; object-fit: contain; margin-bottom: 10px; }
+    h1 { font-size: 2.2rem; color: #1b5e20; margin-bottom: 6px; }
+    .subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    .lang-switch { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+    .lang-btn {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 25px;
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      background: rgba(246, 250, 246, 0.96);
+      backdrop-filter: blur(6px);
+      padding: 10px;
+      border-radius: 12px;
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .nav-bar a.del-link { background: var(--danger-bg); color: var(--danger); }
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 30px;
+      margin-bottom: 26px;
+      scroll-margin-top: 80px;
+    }
+    h2 {
+      font-size: 1.45rem;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+      color: #1a202c;
+    }
+    h3 { font-size: 1.15rem; margin: 20px 0 8px; color: #2d3748; }
+    h4 { font-size: 1rem; margin: 14px 0 6px; color: #4a5568; }
+    p, ul, ol { margin-bottom: 14px; font-size: 0.95rem; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 5px; }
+    .alert-box {
+      background: var(--danger-bg);
+      border-left: 4px solid var(--danger);
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin: 18px 0;
+      font-size: 0.92rem;
+    }
+    .contact-box {
+      background: var(--primary-light);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 18px;
+      font-size: 0.92rem;
+    }
+    footer { text-align: center; padding: 24px; color: var(--text-muted); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <img src="logo.png" alt="Choosie Logo" class="brand-logo">
+    <h1>Choosie</h1>
+    <p class="subtitle" id="header-subtitle">Официальные документы, конфиденциальность и поддержка</p>
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="switchLang('ru')">Русский (RU)</button>
+      <button class="lang-btn" onclick="switchLang('en')">English (EN)</button>
+    </div>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#privacy" id="nav-p">Политика конфиденциальности</a>
+    <a href="#terms" id="nav-t">Условия использования</a>
+    <a href="#deletion" class="del-link" id="nav-d">Удаление аккаунта</a>
+  </nav>
+  <!-- РУССКАЯ ВЕРСИЯ -->
+  <div id="content-ru">
+
+    <section class="card" id="privacy-ru">
+      <h2>Политика конфиденциальности приложения «Choosie»</h2>
+      <p><em>Дата вступления в силу: 3 октября 2026 г.</em></p>
+      <p>Настоящая Политика конфиденциальности описывает, как разработчик Kamilla Kopbayeva (далее — «мы», «нас» или «наш») собирает, использует и защищает информацию, которую вы предоставляете при использовании мобильного приложения «Choosie» (далее — «Приложение»).</p>
+
+      <h3>1. Какую информацию мы собираем</h3>
+      <p>Мы собираем информацию, которая помогает нам предоставлять и улучшать сервис выборки и сохранения рецептов и блюд.</p>
+
+      <h4>1.1. Информация, которую вы предоставляете добровольно:</h4>
+      <ul>
+        <li><strong>Учетные данные:</strong> Адрес электронной почты (email) и данные для авторизации (включая идентификаторы Firebase Authentication), которые вы используете для создания и входа в аккаунт.</li>
+        <li><strong>Пользовательские предпочтения:</strong> История взаимодействия с Приложением, включая ваш выбор блюд, сохраненные рецепты и индивидуальные предпочтения в еде.</li>
+      </ul>
+
+      <h4>1.2. Информация, которая собирается автоматически:</h4>
+      <p>Для обеспечения стабильной работы Приложения мы используем инфраструктуру сторонних сервисов (Google Firebase), которые могут автоматически обрабатывать технические данные:</p>
+      <ul>
+        <li>Уникальные идентификаторы устройства (Firebase Installation ID / Device ID).</li>
+        <li>IP-адрес (используемый для определения примерного региона и маршрутизации запросов).</li>
+        <li>Данные о сбоях, ошибках и производительности Приложения (Crashlytics и Diagnostics).</li>
+        <li>Обезличенная статистика взаимодействия с функционалом Приложения.</li>
+      </ul>
+
+      <h3>2. Как мы используем вашу информацию</h3>
+      <p>Собранные данные используются исключительно в следующих целях:</p>
+      <ul>
+        <li>Создание, защита и управление вашим личным аккаунтом.</li>
+        <li>Сохранение вашего выбора блюд и синхронизация ваших списков между устройствами.</li>
+        <li>Обеспечение стабильной работы Приложения, диагностика и исправление сбоев.</li>
+        <li>Анализ работы Приложения для улучшения пользовательского опыта.</li>
+      </ul>
+
+      <h3>3. Передача данных третьим лицам</h3>
+      <p>Мы не продаем и не передаем ваши персональные данные третьим лицам для маркетинговых или рекламных целей.</p>
+      <p>Для обеспечения работы Приложения используется облачная платформа Google Firebase (предоставляемая Google LLC). Ваши данные (email, выбор блюд, техническая информация) обрабатываются на защищенных серверах Google в соответствии с их стандартами безопасности.</p>
+      <p>Ознакомиться с политикой конфиденциальности Google можно по адресу: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+      <h3>4. Хранение и безопасность данных</h3>
+      <p>Мы принимаем технические и организационные меры для защиты вашей информации. Все данные передаются по защищенным протоколам шифрования (HTTPS/TLS) и хранятся в облачной базе данных Firebase. Данные хранятся до тех пор, пока аккаунт активен, либо до получения запроса на их удаление.</p>
+
+      <h3>5. Конфиденциальность детей (COPPA / GDPR)</h3>
+      <p>Приложение Choosie не предназначено для детей младше 13 лет (или 16 лет в странах ЕС). Мы сознательно не собираем персональные данные несовершеннолетних. Если родителям или законным представителям стало известно, что ребенок предоставил нам личные данные, свяжитесь с нами, и мы незамедлительно их удалим.</p>
+
+      <h3>6. Изменения в Политике конфиденциальности</h3>
+      <p>Мы оставляем за собой право обновлять данную Политику конфиденциальности. При внесении изменений актуальная дата в начале документа будет обновлена. Продолжение использования Приложения Choosie означает ваше согласие с условиями обновленной Политики.</p>
+
+      <div class="contact-box">
+        <strong>Контактная информация:</strong><br>
+        Если у вас возникли вопросы по поводу обработки ваших данных или работы Приложения Choosie, свяжитесь с нами:<br>
+        Разработчик: Kamilla Kopbayeva<br>
+        Email для связи: <a href="mailto:choosiek@gmail.com">choosiek@gmail.com</a>
+      </div>
+    </section>
+
+    <section class="card" id="terms-ru">
+      <h2>Пользовательское соглашение и Отказ от ответственности</h2>
+      <p><em>Дата вступления в силу: 3 октября 2026 г.</em></p>
+      <p>Настоящее Пользовательское соглашение (далее — «Соглашение») регулирует отношения между разработчиком Kamilla Kopbayeva (далее — «Разработчик», «Администрация») и любым физическим лицом (далее — «Пользователь»), использующим мобильное приложение «Choosie» (далее — «Приложение»).</p>
+      <p>Загружая, устанавливая или используя Приложение, Пользователь подтверждает полное и безоговорочное согласие со всеми условиями настоящего Соглашения. Если Пользователь не согласен с условиями, он обязан прекратить использование Приложения и удалить его.</p>
+
+      <h3>1. Общие положения</h3>
+      <ul>
+        <li>1.1. Приложение «Choosie» представляет собой информационный и организационный сервис, предназначенный для подбора, сохранения, планирования и просмотра рецептов и кулинарных блюд.</li>
+        <li>1.2. Вся информация, представленная в Приложении (тексты, рецепты, списки ингредиентов, рекомендации, инструкции по приготовлению), носит исключительно ознакомительный и справочный характер.</li>
+      </ul>
+
+      <div class="alert-box">
+        <strong>Отказ от ответственности за здоровье, аллергии и медицинские противопоказания:</strong> Приложение не дает медицинских или диетологических заключений.
+      </div>
+
+      <h3>2. Отказ от ответственности за здоровье, аллергии и медицинские противопоказания (Ограничение ответственности)</h3>
+      <ul>
+        <li><strong>2.1. Аллергические реакции и пищевая непереносимость:</strong> Пользователь самостоятельно несет полную ответственность за проверку состава ингредиентов любого рецепта на предмет наличия компонентов, вызывающих у Пользователя или третьих лиц (которым Пользователь готовит блюдо) индивидуальную непереносимость, пищевые аллергии, отравления или иные негативные реакции организма. Разработчик не проверяет медицинские особенности Пользователей и не гарантирует гипоаллергенность блюд.</li>
+        <li><strong>2.2. Медицинские показания и диеты:</strong> Информация в Приложении не является медицинским советом, диетологической рекомендацией или диагнозом. Перед использованием рецептов Пользователям со специфическими заболеваниями (диабет, заболевания ЖКТ, беременность и т.д.) рекомендуется проконсультироваться с квалифицированным врачом.</li>
+        <li><strong>2.3. Пищевая безопасность и свежесть продуктов:</strong> Разработчик не несет ответственности за качество, свежесть, условия хранения и термическую обработку ингредиентов, используемых Пользователем. Ответственность за соблюдение санитарных норм и правил кулинарной обработки (включая достаточную прожарку/варку мяса, рыбы, яиц) лежит исключительно на Пользователе.</li>
+      </ul>
+
+      <h3>3. Отказ от ответственности за кулинарные результаты и безопасность на кухне</h3>
+      <ul>
+        <li><strong>3.1. Результаты приготовления:</strong> Разработчик не гарантирует, что приготовленное Пользователем блюдо будет соответствовать ожиданиям по вкусовым качествам, внешнему виду, калорийности, времени приготовления или объему порций. Различия могут быть вызваны качеством продуктов, техническими характеристиками кухонного оборудования и навыками Пользователя.</li>
+        <li><strong>3.2. Техника безопасности:</strong> Приложение не инструктирует Пользователя по технике безопасности при работе с кухонным оборудованием, режущими предметами, открытым огнем, горячими жидкостями и электроприборами. Разработчик не несет ответственности за любые травмы, порезы, ожоги, порчу имущества или иные ущербы, полученные Пользователем в процессе приготовления пищи по рецептам из Приложения.</li>
+      </ul>
+
+      <h3>4. Регистрация и учетная запись</h3>
+      <ul>
+        <li>4.1. Для доступа к функции сохранения рецептов Пользователь создает учетную запись с использованием адреса электронной почты.</li>
+        <li>4.2. Пользователь несет ответственность за сохранность своих данных для входа и за любые действия, совершенные под его аккаунтом.</li>
+        <li>4.3. Разработчик оставляет за собой право ограничить или блокировать доступ к аккаунту в случае нарушения Пользователем условий Соглашения.</li>
+      </ul>
+
+      <h3>5. Интеллектуальная собственность</h3>
+      <ul>
+        <li>5.1. Все элементы дизайна, интерфейса, графики, баз данных и программного кода Приложения Choosie являются объектами интеллектуальной собственности Разработчика.</li>
+        <li>5.2. Пользователю предоставляется личное, неисключительное, непередаваемое право использовать Приложение исключительно в личных некоммерческих целях. Запрещается копировать, реверс-инжинирить или распространять материалы Приложения без согласия Разработчика.</li>
+      </ul>
+
+      <h3>6. Ограничение гарантий и ответственности Администрации</h3>
+      <ul>
+        <li>6.1. Приложение предоставляется на условиях «Как есть» (As Is). Разработчик не гарантирует бесперебойную и безошибочную работу Приложения на всех моделях устройств.</li>
+        <li>6.2. В максимально допустимой законодательством степени Разработчик не несет ответственности за любой прямой, косвенный, случайный или последующий ущерб, возникший в результате использования или невозможности использования Приложения.</li>
+      </ul>
+
+      <div class="contact-box">
+        <strong>Контактные данные Разработчика:</strong><br>
+        Разработчик: Kamilla Kopbayeva<br>
+        Email: <a href="mailto:choosiek@gmail.com">choosiek@gmail.com</a>
+      </div>
+    </section>
+    <section class="card" id="deletion-ru" style="border: 2px solid #feb2b2;">
+      <h2 style="color: var(--danger); border-bottom-color: #fed7d7;">Удаление аккаунта и данных</h2>
+      <p>Пользователи мобильного приложения <strong>«Choosie»</strong> имеют право в любой момент запросить полное и безвозвратное удаление своей учетной записи и всех связанных с ней данных.</p>
+
+      <h3>Способ 1: Внутри мобильного приложения (мгновенно)</h3>
+      <ol>
+        <li>Откройте мобильное приложение <strong>Choosie</strong>.</li>
+        <li>Перейдите во вкладку <strong>«Профиль»</strong> (иконка пользователя в нижнем меню).</li>
+        <li>Нажмите на значок <strong>«Настройки»</strong> (шестеренка в правом верхнем углу).</li>
+        <li>Прокрутите экран в самый низ и нажмите кнопку <strong>«Удалить аккаунт»</strong>.</li>
+        <li>В открывшемся окне подтвердите удаление, нажав <strong>«Да, удалить»</strong>.</li>
+      </ol>
+
+      <h3>Способ 2: Запрос по электронной почте (без установки приложения)</h3>
+      <p>Если вы удалили приложение со своего устройства или потеряли к нему доступ:</p>
+      <ol>
+        <li>Отправьте письмо на наш контактный email: <strong>choosiek@gmail.com</strong>.</li>
+        <li>Письмо необходимо направить <strong>с того же адреса электронной почты</strong>, на который зарегистрирован ваш аккаунт.</li>
+        <li>Тема письма: <code>Удаление аккаунта Choosie</code>.</li>
+        <li>В теле письма укажите запрос на удаление учетной записи.</li>
+      </ol>
+
+      <p><strong>Какие данные удаляются безвозвратно:</strong></p>
+      <ul>
+        <li>Учетная запись (email, пароль/токен авторизации Firebase Authentication);</li>
+        <li>История взаимодействия с блюдами (свайпы, отметки «нравится» и «не нравится»);</li>
+        <li>Сохраненные рецепты и индивидуальные предпочтения в еде;</li>
+        <li>Диагностические идентификаторы установки устройства.</li>
+      </ul>
+      <p><strong>Срок обработки:</strong> При запросе через приложение удаление происходит немедленно. При отправке запроса по электронной почте ваш аккаунт и связанные с ним данные будут полностью удалены из системы и базы данных Firebase в течение <strong>14 календарных дней</strong>.</p>
+    </section>
+
+  </div>
+
+  <!-- АНГЛИЙСКАЯ ВЕРСИЯ -->
+  <div id="content-en" style="display: none;">
+
+    <section class="card" id="privacy-en">
+      <h2>Privacy Policy for «Choosie»</h2>
+      <p><em>Effective Date: October 3, 2026</em></p>
+      <p>This Privacy Policy describes how the developer Kamilla Kopbayeva ("we", "us", or "our") collects, uses, and protects the information you provide when using the "Choosie" mobile application (the "Application").</p>
+
+      <h3>1. Information We Collect</h3>
+      <p>We collect information that helps us provide and improve the recipe and meal selection service.</p>
+
+      <h4>1.1. Information You Provide Voluntarily:</h4>
+      <ul>
+        <li><strong>Account Credentials:</strong> Email address and login credentials (including Firebase Authentication tokens) used to create and access your account.</li>
+        <li><strong>User Preferences:</strong> Interaction history with the Application, including your meal selections, saved recipes, and dietary preferences.</li>
+      </ul>
+
+      <h4>1.2. Information Collected Automatically:</h4>
+      <p>To ensure stable performance, we use third-party infrastructure (Google Firebase), which may automatically process technical data:</p>
+      <ul>
+        <li>Unique device identifiers (Firebase Installation ID / Device ID).</li>
+        <li>IP address (used to estimate approximate region and route server requests).</li>
+        <li>App crash logs, errors, and performance data (Crashlytics and Diagnostics).</li>
+        <li>Anonymized usage statistics and interactions with App features.</li>
+      </ul>
+
+      <h3>2. How We Use Your Information</h3>
+      <p>The collected data is used exclusively for the following purposes:</p>
+      <ul>
+        <li>Creating, securing, and managing your personal account.</li>
+        <li>Saving your meal choices and syncing your lists across devices.</li>
+        <li>Ensuring stable operation, diagnosing, and fixing technical issues.</li>
+        <li>Analyzing App performance to enhance user experience.</li>
+      </ul>
+
+      <h3>3. Third-Party Data Sharing</h3>
+      <p>We do not sell or share your personal data with third parties for marketing or advertising purposes.</p>
+      <p>The Application uses the Google Firebase cloud platform (provided by Google LLC) to support core features. Your data (email, meal preferences, technical info) is processed on secure Google servers in compliance with their security standards.</p>
+      <p>You can view Google's Privacy Policy at: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+
+      <h3>4. Data Storage and Security</h3>
+      <p>We implement technical and organizational measures to protect your information. All data is transmitted over secure encryption protocols (HTTPS/TLS) and stored in the Firebase cloud database. Data is retained for as long as your account remains active or until a deletion request is received.</p>
+
+      <h3>5. Children's Privacy (COPPA / GDPR)</h3>
+      <p>The Application is not directed toward children under 13 (or under 16 in the EEA). We do not knowingly collect personal details from children. If you become aware that a child has provided us with personal information, please contact us immediately so we can remove it.</p>
+
+      <h3>6. Changes to This Privacy Policy</h3>
+      <p>We reserve the right to update this Privacy Policy. When changes are made, the effective date at the top of the document will be updated. Continued use of the Choosie Application constitutes your acceptance of the updated terms.</p>
+
+      <div class="contact-box">
+        <strong>Contact Information:</strong><br>
+        If you have any questions regarding the processing of your data or the Choosie Application, please contact us:<br>
+        Developer: Kamilla Kopbayeva<br>
+        Email: <a href="mailto:choosiek@gmail.com">choosiek@gmail.com</a>
+      </div>
+    </section>
+    <section class="card" id="terms-en">
+      <h2>Terms of Use & Disclaimer for «Choosie»</h2>
+      <p><em>Effective Date: October 3, 2026</em></p>
+      <p>This Terms of Use Agreement (the "Agreement") governs the relationship between developer Kamilla Kopbayeva ("Developer", "Administration") and any individual ("User") using the "Choosie" mobile application (the "Application").</p>
+      <p>By downloading, installing, or using the Application, the User confirms their full and unconditional acceptance of all terms of this Agreement. If the User does not agree to these terms, they must cease using the Application and delete it.</p>
+
+      <h3>1. General Provisions</h3>
+      <ul>
+        <li>1.1. The "Choosie" Application is an informational and organizational service designed for selecting, saving, planning, and browsing recipes and culinary dishes.</li>
+        <li>1.2. All information presented in the Application (texts, recipes, ingredient lists, recommendations, cooking instructions) is provided strictly for informational and reference purposes only.</li>
+      </ul>
+
+      <div class="alert-box">
+        <strong>Important Health & Allergen Notice:</strong> Choosie does not provide medical or individualized dietary advice.
+      </div>
+
+      <h3>2. Disclaimer of Liability for Health, Allergies, and Medical Conditions</h3>
+      <ul>
+        <li><strong>2.1. Allergic Reactions and Food Intolerance:</strong> The User is solely and fully responsible for checking ingredient lists of any recipe for components causing personal intolerance, food allergies, food poisoning, or other adverse bodily reactions for themselves or third parties (for whom the User prepares meals). The Developer does not verify User medical profiles and does not guarantee the hypoallergenicity of dishes.</li>
+        <li><strong>2.2. Medical Conditions and Diets:</strong> Information in the Application does not constitute medical advice, dietary recommendations, or diagnosis. Users with specific medical conditions (diabetes, gastrointestinal diseases, pregnancy, etc.) should consult a qualified physician before using recipes.</li>
+        <li><strong>2.3. Food Safety and Freshness:</strong> The Developer is not responsible for the quality, freshness, storage conditions, or thermal processing of ingredients used by the User. Compliance with sanitary standards and culinary safety (including adequate cooking/boiling of meat, fish, eggs) rests entirely with the User.</li>
+      </ul>
+
+      <h3>3. Disclaimer for Culinary Results and Kitchen Safety</h3>
+      <ul>
+        <li><strong>3.1. Cooking Results:</strong> The Developer does not guarantee that meals prepared by the User will meet expectations regarding taste, appearance, caloric content, cooking time, or portion size. Variations may occur due to ingredient quality, kitchen equipment specifications, and User cooking skills.</li>
+        <li><strong>3.2. Kitchen Safety:</strong> The Application does not instruct Users on safety procedures when operating kitchen equipment, sharp instruments, open flames, hot liquids, or electrical appliances. The Developer is not liable for any injuries, cuts, burns, property damage, or other losses incurred during food preparation based on recipes from the Application.</li>
+      </ul>
+
+      <h3>4. Registration and Account</h3>
+      <ul>
+        <li>4.1. To access recipe saving features, the User creates an account using an email address.</li>
+        <li>4.2. The User is responsible for maintaining the confidentiality of login credentials and for all activities conducted under their account.</li>
+        <li>4.3. The Developer reserves the right to restrict or block account access in the event of a User violation of this Agreement.</li>
+      </ul>
+
+      <h3>5. Intellectual Property</h3>
+      <ul>
+        <li>5.1. All design elements, interface, graphics, databases, and software code of the Choosie Application are the intellectual property of the Developer.</li>
+        <li>5.2. The User is granted a personal, non-exclusive, non-transferable right to use the Application solely for personal, non-commercial purposes. Copying, reverse engineering, or distributing Application materials without Developer consent is prohibited.</li>
+      </ul>
+
+      <h3>6. Limitation of Warranties and Liability</h3>
+      <ul>
+        <li>6.1. The Application is provided on an "As Is" basis. The Developer does not guarantee uninterrupted or error-free operation of the Application on all device models.</li>
+        <li>6.2. To the maximum extent permitted by applicable law, the Developer is not liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use the Application.</li>
+      </ul>
+
+      <div class="contact-box">
+        <strong>Contact Information:</strong><br>
+        Developer: Kamilla Kopbayeva<br>
+        Email: <a href="mailto:choosiek@gmail.com">choosiek@gmail.com</a>
+      </div>
+    </section>
+
+    <section class="card" id="deletion-en" style="border: 2px solid #feb2b2;">
+      <h2 style="color: var(--danger); border-bottom-color: #fed7d7;">Account and Data Deletion</h2>
+      <p>Users of the <strong>Choosie</strong> mobile application have the right to request full and permanent deletion of their account and all associated personal data.</p>
+
+      <h3>Method 1: In the App (Instant)</h3>
+      <ol>
+        <li>Open the <strong>Choosie</strong> mobile app.</li>
+        <li>Tap the <strong>Profile</strong> tab in the bottom navigation bar.</li>
+        <li>Tap the <strong>Settings</strong> icon (gear) in the upper corner.</li>
+        <li>Scroll down to the bottom and tap <strong>"Delete Account"</strong>.</li>
+        <li>Confirm your action by selecting <strong>"Yes, delete"</strong>.</li>
+      </ol>
+
+      <h3>Method 2: By Email Request (Without App Installed)</h3>
+      <p>If you uninstalled the application or cannot access your account:</p>
+      <ol>
+        <li>Send an email to our support address: <strong>choosiek@gmail.com</strong>.</li>
+        <li>The email must be sent <strong>from the address</strong> registered with your Choosie account.</li>
+        <li>Subject line: <code>Choosie Account Deletion</code>.</li>
+        <li>Clearly state your request to delete the account and associated records in the body of the message.</li>
+      </ol>
+
+      <p><strong>What data will be permanently wiped:</strong></p>
+      <ul>
+        <li>Account profile (email address and Firebase Auth user tokens);</li>
+        <li>Meal interaction records (swipes, likes, and dislikes);</li>
+        <li>Saved recipes, custom collections, and dietary preferences;</li>
+        <li>Diagnostic installation identifiers.</li>
+      </ul>
+      <p><strong>Processing Time:</strong> When requested within the application, deletion occurs instantly. For email requests, your account and associated data will be permanently removed from our Firebase systems within <strong>14 calendar days</strong>.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Choosie. Developer Kamilla Kopbayeva. All rights reserved.
+  </footer>
+</div>
+
+<script>
+  let currentLang = 'ru';
+
+  function scrollToSection(type) {
+    const targetId = type + '-' + currentLang;
+    const targetEl = document.getElementById(targetId);
+    if (targetEl) {
+      const navBar = document.querySelector('.nav-bar');
+      const offset = (navBar ? navBar.offsetHeight : 60) + 25; // высота меню + отступ
+      const elementPosition = targetEl.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  function switchLang(lang) {
+    currentLang = lang;
+    const ru = document.getElementById('content-ru');
+    const en = document.getElementById('content-en');
+    const btns = document.querySelectorAll('.lang-btn');
+    const navP = document.getElementById('nav-p');
+    const navT = document.getElementById('nav-t');
+    const navD = document.getElementById('nav-d');
+    const subtitle = document.getElementById('header-subtitle');
+
+    if (lang === 'ru') {
+      ru.style.display = 'block';
+      en.style.display = 'none';
+      btns[0].classList.add('active');
+      btns[1].classList.remove('active');
+      navP.innerText = 'Политика конфиденциальности';
+      navT.innerText = 'Условия использования';
+      navD.innerText = 'Удаление аккаунта';
+      subtitle.innerText = 'Официальные документы, конфиденциальность и поддержка';
+    } else {
+      ru.style.display = 'none';
+      en.style.display = 'block';
+      btns[1].classList.add('active');
+      btns[0].classList.remove('active');
+      navP.innerText = 'Privacy Policy';
+      navT.innerText = 'Terms of Use';
+      navD.innerText = 'Account Deletion';
+      subtitle.innerText = 'Legal documents, privacy and user support';
+    }
+  }
+
+  document.getElementById('nav-p').addEventListener('click', function(e) {
+    e.preventDefault();
+    scrollToSection('privacy');
+  });
+  document.getElementById('nav-t').addEventListener('click', function(e) {
+    e.preventDefault();
+    scrollToSection('terms');
+  });
+  document.getElementById('nav-d').addEventListener('click', function(e) {
+    e.preventDefault();
+    scrollToSection('deletion');
+  });
+
+  window.addEventListener('load', function() {
+    const hash = window.location.hash;
+    const lang = (navigator.language || '').slice(0, 2);
+    if (lang !== 'ru' && lang !== 'kk') {
+      switchLang('en');
+    }
+    setTimeout(function() {
+      if (hash.indexOf('del') !== -1) {
+        scrollToSection('deletion');
+      } else if (hash.indexOf('priv') !== -1) {
+        scrollToSection('privacy');
+      } else if (hash.indexOf('term') !== -1) {
+        scrollToSection('terms');
+      }
+    }, 100);
+  });
+</script>
+
+</body>
+</html>
